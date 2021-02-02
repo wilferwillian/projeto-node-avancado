@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GitHub | Info</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="container shadow-lg p-3 mb-5 mt-5 bg-white rounded">
+        <div class="card m-5 ">
+            <div class="card-header bg-dark text-light text-center  ">
+                <h1>Olá, <%= dado.login %></h1> <br /> <hr/>
+            </div>
+            <div class="card-header  bg-dark text-light text-center ">
+                <h2>Seu endereço é esse: </h2> <br/> 
+                <h3 class="bg-light text-dark"><%= dado.url %> </h3>
+                <h2>Sua BIO é essa: </h2><br/> 
+             <h3 class="bg-light text-dark"> <%= dado.bio %></h3>
+                <h2> Esse é o numero de seguidores:</h2><br/>
+             <h3 class="bg-light text-dark"> <%= dado.followers %></h3>
+                <h2> Você esta seguindo:</h2><br/>
+             <h3 class="bg-light text-dark"> <%= dado.following %></h3>
+            </div>
+        </div>
+        <a href="/" class="btn btn-outline-dark btn-lg">Procurar outro usuário do GitHub</a>
+    </div>
+</body>
+</html>
